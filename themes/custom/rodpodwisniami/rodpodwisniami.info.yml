@@ -3,7 +3,7 @@ type: theme
 description: 'theme for rod pod wisniami.'
 core_version_requirement: '>=9.2'
 libraries:
-  - fluffiness/global-styling
+  - oliviero/global-styling
   - rodpodwisniami/global-styling
 base theme: stable9
 version: 1.0.0

@@ -22,6 +22,13 @@
 #}
 {{ attach_library('olivero/navigation-primary') }}
 
+
+<ul class="links">
+  <li class="active"><a href="index.html">This is Massively</a></li>
+  <li><a href="generic.html">Generic Page</a></li>
+  <li><a href="elements.html">Elements Reference</a></li>
+</ul>
+
 {% import _self as menus %}
 
 {#
@@ -32,7 +39,7 @@
 {{ menus.menu_links(items, attributes, 0, 'primary-menu-item-') }}
 
 {% macro menu_links(items, attributes, menu_level, aria_id) %}
-  {% set primary_nav_level = 'primary-nav__menu--level-' ~ (menu_level + 1) %}
+  {% set primary_nav_level = 'links primary-nav__menu--level-' ~ (menu_level + 1) %}
   {% set drupal_selector_primary_nav_level = menu_level <= 1 ? 'primary-nav-menu--level-' ~ (menu_level + 1) : false %}
   {% set is_top_level_menu = menu_level == 0 %}
   {% import _self as menus %}
