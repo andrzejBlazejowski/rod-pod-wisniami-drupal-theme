@@ -17,3 +17,27 @@ global-styling:
      js/script.js: {}
   dependencies: 
     - core/jquery
+    - rodpodwisniami/navigation-base
+
+navigation-base:
+  version: VERSION
+  js:
+    js/navigation-utils.js: {}
+  dependencies:
+    - core/drupal
+    - core/once
+    - core/tabbable
+
+navigation-primary:
+  version: VERSION
+  css:
+    component:
+      css/components/navigation/nav-primary.css: {}
+      css/components/navigation/nav-primary-button.css: {}
+      css/components/navigation/nav-primary-wide.css: {}
+  js:
+    js/navigation.js: {}
+    js/second-level-navigation.js: {}
+    js/nav-resize.js: {}
+  dependencies:
+    - rodpodwisniami/navigation-base
