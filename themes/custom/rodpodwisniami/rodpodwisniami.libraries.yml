@@ -1,0 +1,19 @@
+global-styling: 
+  version: 1.0.0
+  css:
+    theme:
+     css/fontawesome-all.min.css: {}
+     css/main.css: {}
+     css/noscript.css: {}
+  js:
+    theme:
+     js/breakpoints.min.js: {}
+     js/browser.min.js: {}
+     js/jquery.min.js: {}
+     js/jquery.scrollex.min.js: {}
+     js/jquery.scrolly.min.js: {}
+     js/main.js: {}
+     js/util.js: {}
+     js/script.js: {}
+  dependencies: 
+    - core/jquery
